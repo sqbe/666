@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище varModelContainer" CdmEntityContainer="ProdEnt">
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="varModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="NameM" ColumnName="NameM" />
+          <ScalarProperty Name="idTypeM" ColumnName="idTypeM" />
+          <ScalarProperty Name="CountinPuck" ColumnName="CountinPuck" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="CountinStock" ColumnName="CountinStock" />
+          <ScalarProperty Name="MinOstatok" ColumnName="MinOstatok" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="varModel.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="idMtype" ColumnName="idMtype" />
+          <ScalarProperty Name="NameMaterialTupe" ColumnName="NameMaterialTupe" />
+          <ScalarProperty Name="Procent" ColumnName="Procent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prod_Material">
+      <EntityTypeMapping TypeName="varModel.Prod_Material">
+        <MappingFragment StoreEntitySet="Prod_Material">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="Procent" ColumnName="Procent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="varModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="idProducts" ColumnName="idProducts" />
+          <ScalarProperty Name="ProdName" ColumnName="ProdName" />
+          <ScalarProperty Name="Artocle" ColumnName="Artocle" />
+          <ScalarProperty Name="MinCostForAgent" ColumnName="MinCostForAgent" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdTypeProd" ColumnName="IdTypeProd" />
+          <ScalarProperty Name="CountPresins" ColumnName="CountPresins" />
+          <ScalarProperty Name="NumberCeh" ColumnName="NumberCeh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="varModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeProd">
+      <EntityTypeMapping TypeName="varModel.TypeProd">
+        <MappingFragment StoreEntitySet="TypeProd">
+          <ScalarProperty Name="idTP" ColumnName="idTP" />
+          <ScalarProperty Name="NameTP" ColumnName="NameTP" />
+          <ScalarProperty Name="TpProcent" ColumnName="TpProcent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
